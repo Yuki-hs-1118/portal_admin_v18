@@ -6,12 +6,12 @@ Admin::routes();
 
 Route::group([
     'prefix'        => config('admin.route.prefix'),
-    'namespace'     => config('admin.route.namespace'),
+    'namespace'     => 'App\\Packages\\Basis\\Application\\Controller',
     'middleware'    => config('admin.route.middleware'),
     'as'            => config('admin.route.prefix') . '.',
 ], function (Router $router) {
 
-    $router->get('/', 'HomeController@index')->name('home');
+    $router->get('/', 'TopController@index')->name('home');
     $router->resource('auth/users', UserController::class);
 
 });

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Packages\Basis\Application\Controllers;
+namespace App\Packages\Basis\Application\Controller;
 
 use Encore\Admin\Form;
 use Illuminate\Support\Facades\Hash;

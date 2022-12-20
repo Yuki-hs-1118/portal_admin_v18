@@ -60,7 +60,7 @@ return [
 
         'prefix' => env('ADMIN_ROUTE_PREFIX', 'admin'),
 
-        'namespace' => 'App\\Packages\\Basis\\Application\\Controllers',
+        'namespace' => 'App\\Packages',
 
         'middleware' => ['web', 'admin'],
     ],
@@ -85,7 +85,7 @@ return [
     | Html title for all pages.
     |
     */
-    'title' => 'Admin',
+    'title' => 'v18',
 
     /*
     |--------------------------------------------------------------------------
